@@ -1,0 +1,156 @@
+Option Explicit
+
+Private Sub cmdLevel1_Click()
+frmEasy1level1.Show (vbModal)
+End Sub
+
+Private Sub cmdLevel2_Click()
+frmEasy1level2.Show (vbModal)
+End Sub
+
+Private Sub cmdLevel3_Click()
+frmEasy1level3.Show (vbModal)
+End Sub
+
+Private Sub cmdLevel4_Click()
+frmEasy1level4.Show (vbModal)
+End Sub
+
+Private Sub cmdLevel5_Click()
+frmEasy1level5.Show (vbModal)
+End Sub
+
+
+Private Sub Form_Load()
+Dim lb1 As String, lb2 As String, lb3 As String, lb4 As String, lb5 As String
+Dim Filename As String
+Dim Filenumber
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\Color\1-1.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, lb1
+Line Input #Filenumber, lb2
+Line Input #Filenumber, lb3
+Line Input #Filenumber, lb4
+Line Input #Filenumber, lb5
+Close #Filenumber
+lbl1 = lb1
+lbl2 = lb2
+lbl3 = lb3
+lbl4 = lb4
+lbl5 = lb5
+If lbl1.Caption >= 80 Then
+cmdLevel1.BackColor = vbGreen
+ElseIf lbl1.Caption = 0 Then
+cmdLevel1.BackColor = &HFFFF00
+Else
+cmdLevel1.BackColor = vbRed
+End If
+If lbl2.Caption >= 80 Then
+cmdLevel2.BackColor = vbGreen
+ElseIf lbl2.Caption = 0 Then
+cmdLevel2.BackColor = &HFFFF00
+Else
+cmdLevel2.BackColor = vbRed
+End If
+If lbl3.Caption >= 80 Then
+cmdLevel3.BackColor = vbGreen
+ElseIf lbl3.Caption = 0 Then
+cmdLevel3.BackColor = &HFFFF00
+Else
+cmdLevel3.BackColor = vbRed
+End If
+If lbl4.Caption >= 80 Then
+cmdLevel4.BackColor = vbGreen
+ElseIf lbl4.Caption = 0 Then
+cmdLevel4.BackColor = &HFFFF00
+Else
+cmdLevel4.BackColor = vbRed
+End If
+If lbl5.Caption > 80 Then
+cmdLevel5.BackColor = vbGreen
+ElseIf lbl5.Caption = 0 Then
+cmdLevel5.BackColor = &HFFFF00
+Else
+cmdLevel5.BackColor = vbRed
+End If
+lblRes.Caption = "Score = " + Str(Val((frmEasy1.lbl1.Caption) + Val(frmEasy1.lbl2.Caption) + Val(frmEasy1.lbl3.Caption) + Val(frmEasy1.lbl4.Caption) + Val(frmEasy1.lbl5.Caption)) / 5)
+End Sub
+
+
+
+Private Sub lbl1_Change()
+If lbl1.Caption >= 80 Then
+cmdLevel1.BackColor = vbGreen
+ElseIf lbl1.Caption = 0 Then
+cmdLevel1.BackColor = &HFFFF00
+Else
+cmdLevel1.BackColor = vbRed
+End If
+End Sub
+
+Private Sub lbl2_Change()
+If lbl2.Caption >= 80 Then
+cmdLevel2.BackColor = vbGreen
+ElseIf lbl2.Caption = 0 Then
+cmdLevel2.BackColor = &HFFFF00
+Else
+cmdLevel2.BackColor = vbRed
+End If
+End Sub
+
+Private Sub lbl3_Change()
+If lbl3.Caption >= 80 Then
+cmdLevel3.BackColor = vbGreen
+ElseIf lbl3.Caption = 0 Then
+cmdLevel3.BackColor = &HFFFF00
+Else
+cmdLevel3.BackColor = vbRed
+End If
+
+End Sub
+
+Private Sub lbl4_Change()
+If lbl4.Caption >= 80 Then
+cmdLevel4.BackColor = vbGreen
+ElseIf lbl4.Caption = 0 Then
+cmdLevel4.BackColor = &HFFFF00
+Else
+cmdLevel4.BackColor = vbRed
+End If
+End Sub
+
+Private Sub lbl5_Change()
+If lbl5.Caption > 80 Then
+cmdLevel5.BackColor = vbGreen
+ElseIf lbl5.Caption = 0 Then
+cmdLevel5.BackColor = &HFFFF00
+Else
+cmdLevel5.BackColor = vbRed
+End If
+End Sub
+
+
+Private Sub lblRes_Change()
+ If ((Val(frmEasy1.lbl1.Caption) + Val(frmEasy1.lbl2.Caption) + Val(frmEasy1.lbl3.Caption) + Val(frmEasy1.lbl4.Caption) + Val(frmEasy1.lbl5.Caption)) / 5) >= 80 Then
+ frmEasy.cmdStage2.Enabled = True
+ frmEasy.lblStage2.Caption = "T"
+ Else
+ frmEasy.cmdStage2.Enabled = False
+ frmEasy.lblStage2.Caption = "F"
+ End If
+
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\Color\1-1.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lbl1
+Print #Filenumber, lbl2
+Print #Filenumber, lbl3
+Print #Filenumber, lbl4
+Print #Filenumber, lbl5
+Close #Filenumber
+
+End Sub
+
