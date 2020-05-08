@@ -1,0 +1,21 @@
+Option Explicit
+
+Private Sub cmdDifficalt_Click()
+frmDif.Show (vbModal)
+End Sub
+
+Private Sub cmdEasy_Click()
+frmEasy.Show (vbModal)
+End Sub
+
+Private Sub cmdIntermediate_Click()
+frmMod.Show (vbModal)
+End Sub
+
+Private Sub cmdPrint_Click()
+frmPrintE.Show (vbModal)
+End Sub
+
+Private Sub Form_Load()
+Form1.Show (vbModal)
+End Sub
