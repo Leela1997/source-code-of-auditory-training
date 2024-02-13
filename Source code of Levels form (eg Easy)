@@ -1,0 +1,292 @@
+Option Explicit
+
+Private Sub cmdStage1_Click()
+frmEasy1.Show (vbModal)
+End Sub
+
+Private Sub cmdStage10_Click()
+frmEasy10.Show (vbModal)
+End Sub
+
+Private Sub cmdStage11_Click()
+frmEasy11.Show (vbModal)
+End Sub
+
+Private Sub cmdStage12_Click()
+frmEasy12.Show (vbModal)
+End Sub
+
+Private Sub cmdStage2_Click()
+frmEasy2.Show (vbModal)
+End Sub
+
+Private Sub cmdStage3_Click()
+frmEasy3.Show (vbModal)
+End Sub
+
+Private Sub cmdStage4_Click()
+frmEasy4.Show (vbModal)
+End Sub
+
+Private Sub cmdStage5_Click()
+frmEasy5.Show (vbModal)
+End Sub
+
+Private Sub cmdStage6_Click()
+frmEasy6.Show (vbModal)
+End Sub
+
+Private Sub cmdStage7_Click()
+frmEasy7.Show (vbModal)
+End Sub
+
+Private Sub cmdStage8_Click()
+frmEasy8.Show (vbModal)
+End Sub
+
+Private Sub cmdStage9_Click()
+frmEasy9.Show (vbModal)
+End Sub
+
+Private Sub Form_Load()
+Dim EnStage2 As String, EnStage3 As String, EnStage4 As String, EnStage5 As String, EnStage6 As String, EnStage7 As String, EnStage8 As String, EnStage9 As String, EnStage10 As String, EnStage11 As String, EnStage12 As String
+Dim Filename As String
+Dim Filenumber
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\1.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage2
+Close #Filenumber
+lblStage2 = EnStage2
+If lblStage2.Caption = "T" Then
+cmdStage2.Enabled = True
+Else
+cmdStage2.Enabled = False
+End If
+'Dim EnStage3 As String
+'Dim Filename As String
+'Dim Filenumber
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\2.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage3
+Close #Filenumber
+lblStage3 = EnStage3
+If lblStage3.Caption = "T" Then
+cmdStage3.Enabled = True
+Else
+cmdStage3.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\3.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage4
+Close #Filenumber
+lblStage4 = EnStage4
+If lblStage4.Caption = "T" Then
+cmdStage4.Enabled = True
+Else
+cmdStage4.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\4.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage5
+Close #Filenumber
+lblStage5 = EnStage5
+If lblStage5.Caption = "T" Then
+cmdStage5.Enabled = True
+Else
+cmdStage5.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\5.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage6
+Close #Filenumber
+lblStage6 = EnStage6
+If lblStage6.Caption = "T" Then
+cmdStage6.Enabled = True
+Else
+cmdStage6.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\6.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage7
+Close #Filenumber
+lblStage7 = EnStage7
+If lblStage7.Caption = "T" Then
+cmdStage7.Enabled = True
+Else
+cmdStage7.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\7.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage8
+Close #Filenumber
+lblStage8 = EnStage8
+If lblStage8.Caption = "T" Then
+cmdStage8.Enabled = True
+Else
+cmdStage8.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\8.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage9
+Close #Filenumber
+lblStage9 = EnStage9
+If lblStage9.Caption = "T" Then
+cmdStage9.Enabled = True
+Else
+cmdStage9.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\9.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage10
+Close #Filenumber
+lblStage10 = EnStage10
+If lblStage10.Caption = "T" Then
+cmdStage10.Enabled = True
+Else
+cmdStage10.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\10.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage11
+Close #Filenumber
+lblStage11 = EnStage11
+If lblStage11.Caption = "T" Then
+cmdStage11.Enabled = True
+Else
+cmdStage11.Enabled = False
+End If
+
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\level\11.txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, EnStage12
+Close #Filenumber
+lblStage12 = EnStage12
+If lblStage12.Caption = "T" Then
+cmdStage12.Enabled = True
+Else
+cmdStage12.Enabled = False
+End If
+
+
+End Sub
+
+Private Sub lblStage2_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\1.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage2
+Close #Filenumber
+End Sub
+
+Private Sub lblStage3_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\2.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage3
+Close #Filenumber
+End Sub
+
+Private Sub lblStage4_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\3.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage4
+Close #Filenumber
+End Sub
+Private Sub lblStage5_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\4.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage5
+Close #Filenumber
+End Sub
+Private Sub lblStage6_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\5.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage6
+Close #Filenumber
+End Sub
+Private Sub lblStage7_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\6.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage7
+Close #Filenumber
+End Sub
+Private Sub lblStage8_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\7.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage8
+Close #Filenumber
+End Sub
+Private Sub lblStage9_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\8.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage9
+Close #Filenumber
+End Sub
+Private Sub lblStage10_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\9.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage10
+Close #Filenumber
+End Sub
+Private Sub lblStage11_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\10.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage11
+Close #Filenumber
+End Sub
+Private Sub lblStage12_Change()
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\level\11.txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, lblStage12
+Close #Filenumber
+End Sub

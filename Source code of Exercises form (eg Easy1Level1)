@@ -1,0 +1,753 @@
+Dim Per As Integer, Rand As Integer
+Dim P1 As Integer, P2 As Integer, P3 As Integer, P4 As Integer, P5 As Integer, P6 As Integer, P7 As Integer, P8 As Integer, P9 As Integer, P10 As Integer
+Dim Start As Integer, Stable As Integer
+Option Explicit
+
+Private Sub cmdNext_Click()
+frmEasy1level1.Hide
+frmEasy1level2.Show (vbModal)
+End Sub
+
+Private Sub cmdPlay1_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P1 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P1 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P1 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P1 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P1 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P1 = 1
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P1 = 2
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P1 = 5
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P1 = 2
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P1 = 1
+End If
+cmdPlay1.Enabled = False
+End Sub
+
+Private Sub cmdPlay10_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P10 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P10 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P10 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P10 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P10 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P10 = 3
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P10 = 1
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P10 = 4
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P10 = 5
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P10 = 3
+End If
+cmdPlay10.Enabled = False
+End Sub
+
+Private Sub cmdPlay2_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P2 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P2 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P2 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P2 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P2 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P2 = 2
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P2 = 5
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P2 = 1
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P2 = 1
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P2 = 2
+End If
+cmdPlay2.Enabled = False
+End Sub
+
+Private Sub cmdPlay3_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P3 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P3 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P3 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P3 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P3 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P3 = 3
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P3 = 4
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P3 = 4
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P3 = 3
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P3 = 2
+End If
+cmdPlay3.Enabled = False
+End Sub
+
+Private Sub cmdPlay4_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P4 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P4 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P4 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P4 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P4 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P4 = 4
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P4 = 2
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P4 = 3
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P4 = 5
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P4 = 4
+End If
+cmdPlay4.Enabled = False
+End Sub
+
+Private Sub cmdPlay5_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P5 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P5 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P5 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P5 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P5 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P5 = 5
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P5 = 3
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P5 = 2
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P5 = 1
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P5 = 4
+End If
+cmdPlay5.Enabled = False
+End Sub
+
+Private Sub cmdPlay6_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P6 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P6 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P6 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P6 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P6 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P6 = 5
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P6 = 1
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P6 = 5
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P6 = 2
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P6 = 3
+End If
+cmdPlay6.Enabled = False
+End Sub
+
+Private Sub cmdPlay7_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P7 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P7 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P7 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P7 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P7 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P7 = 4
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P7 = 5
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P7 = 3
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P7 = 4
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P7 = 1
+End If
+cmdPlay7.Enabled = False
+End Sub
+
+Private Sub cmdPlay8_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P8 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P8 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P8 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P8 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P8 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P8 = 1
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P8 = 3
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P8 = 2
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P8 = 4
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P8 = 5
+End If
+cmdPlay8.Enabled = False
+End Sub
+
+Private Sub cmdPlay9_Click()
+'If Rand = 1 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+'P9 = 1
+'ElseIf Rand = 2 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+'P9 = 2
+'ElseIf Rand = 3 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+'P9 = 3
+'ElseIf Rand = 4 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+'P9 = 4
+'ElseIf Rand = 5 Then
+'WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+'P9 = 5
+'End If
+If Start = 0 Then
+Stable = Rand
+Start = 1
+End If
+If Stable = 1 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\2.wav"
+P9 = 2
+ElseIf Stable = 2 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\4.wav"
+P9 = 4
+ElseIf Stable = 3 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\1.wav"
+P9 = 1
+ElseIf Stable = 4 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\3.wav"
+P9 = 3
+ElseIf Stable = 5 Then
+WindowsMediaPlayer1.URL = "C:\Audtrain\training program\Asan\Level 1\T1 (1-1-1)\5.wav"
+P9 = 5
+End If
+cmdPlay9.Enabled = False
+End Sub
+
+Private Sub cmdResult_Click()
+If cmdResult.Caption = "ÔÑæÚ ãÌÏÏ" Then
+cmdPlay1.Enabled = True
+cmdPlay2.Enabled = True
+cmdPlay3.Enabled = True
+cmdPlay4.Enabled = True
+cmdPlay5.Enabled = True
+cmdPlay6.Enabled = True
+cmdPlay7.Enabled = True
+cmdPlay8.Enabled = True
+cmdPlay9.Enabled = True
+cmdPlay10.Enabled = True
+lblResult.Caption = ""
+frmEasy1.lbl1.Caption = "0"
+frmEasy1.lblRes.Caption = "Score =" + Str(Val((frmEasy1.lbl1.Caption) + Val(frmEasy1.lbl2.Caption) + Val(frmEasy1.lbl3.Caption) + Val(frmEasy1.lbl4.Caption) + Val(frmEasy1.lbl5.Caption)) / 5)
+cmdResult.Caption = "ãÍÇÓÈå ÇãÊíÇÒ"
+txt1.Text = ""
+txt2.Text = ""
+txt3.Text = ""
+txt4.Text = ""
+txt5.Text = ""
+txt6.Text = ""
+txt7.Text = ""
+txt8.Text = ""
+txt9.Text = ""
+txt10.Text = ""
+Start = 0
+Else
+Dim R As Integer, s As Integer
+R = 0
+If P1 = 1 And txt1.Text = "1" Or P1 = 2 And txt1.Text = "2" Or P1 = 3 And txt1.Text = "2" Or P1 = 4 And txt1.Text = "3" Or P1 = 5 And txt1.Text = "3" Then
+R = R + 1
+End If
+If P2 = 1 And txt2.Text = "1" Or P2 = 2 And txt2.Text = "2" Or P2 = 3 And txt2.Text = "2" Or P2 = 4 And txt2.Text = "3" Or P2 = 5 And txt2.Text = "3" Then
+R = R + 1
+End If
+If P3 = 1 And txt3.Text = "1" Or P3 = 2 And txt3.Text = "2" Or P3 = 3 And txt3.Text = "2" Or P3 = 4 And txt3.Text = "3" Or P3 = 5 And txt3.Text = "3" Then
+R = R + 1
+End If
+If P4 = 1 And txt4.Text = "1" Or P4 = 2 And txt4.Text = "2" Or P4 = 3 And txt4.Text = "2" Or P4 = 4 And txt4.Text = "3" Or P4 = 5 And txt4.Text = "3" Then
+R = R + 1
+End If
+If P5 = 1 And txt5.Text = "1" Or P5 = 2 And txt5.Text = "2" Or P5 = 3 And txt5.Text = "2" Or P5 = 4 And txt5.Text = "3" Or P5 = 5 And txt5.Text = "3" Then
+R = R + 1
+End If
+If P6 = 1 And txt6.Text = "1" Or P6 = 2 And txt6.Text = "2" Or P6 = 3 And txt6.Text = "2" Or P6 = 4 And txt6.Text = "3" Or P6 = 5 And txt6.Text = "3" Then
+R = R + 1
+End If
+If P7 = 1 And txt7.Text = "1" Or P7 = 2 And txt7.Text = "2" Or P7 = 3 And txt7.Text = "2" Or P7 = 4 And txt7.Text = "3" Or P7 = 5 And txt7.Text = "3" Then
+R = R + 1
+End If
+If P8 = 1 And txt8.Text = "1" Or P8 = 2 And txt8.Text = "2" Or P8 = 3 And txt8.Text = "2" Or P8 = 4 And txt8.Text = "3" Or P8 = 5 And txt8.Text = "3" Then
+R = R + 1
+End If
+If P9 = 1 And txt9.Text = "1" Or P9 = 2 And txt9.Text = "2" Or P9 = 3 And txt9.Text = "2" Or P9 = 4 And txt9.Text = "3" Or P9 = 5 And txt9.Text = "3" Then
+R = R + 1
+End If
+If P10 = 1 And txt10.Text = "1" Or P10 = 2 And txt10.Text = "2" Or P10 = 3 And txt10.Text = "2" Or P10 = 4 And txt10.Text = "3" Or P10 = 5 And txt10.Text = "3" Then
+R = R + 1
+End If
+s = (R * 100) / 10
+lblResult.Caption = "Result = " & s
+frmEasy1.lbl1.Caption = s
+frmEasy1.lblRes.Caption = "Score =" + Str(Val((frmEasy1.lbl1.Caption) + Val(frmEasy1.lbl2.Caption) + Val(frmEasy1.lbl3.Caption) + Val(frmEasy1.lbl4.Caption) + Val(frmEasy1.lbl5.Caption)) / 5)
+'If s >= 50 Then
+'MsgBox ("ÔãÇ ãæÝÞ ÔÏíÏ æ ãí ÊæÇäíÏ Èå ãÑÍáå ÈÚÏ ÈÑæíÏ")
+'frmEasy1.cmdLevel2.Enabled = True
+'frmEasy1level1.Hide
+'Else
+'MsgBox ("ÇãÊíÇÒ ÔãÇ ˜ã ÇÓÊ ãÌÏÏÇ ÔÑæÚ ˜äíÏ")
+'End If
+If s < 80 Then
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+
+'frmEasy1level1.Hide
+'frmEasy1level2.Show (vbModal)
+End If
+End If
+
+Dim Filename As String
+Dim Filenumber
+Filename = "C:\Audtrain\Save\T1 (1-1-1).txt"
+Filenumber = FreeFile
+Open Filename For Output As Filenumber
+Print #Filenumber, txt1
+Print #Filenumber, txt2
+Print #Filenumber, txt3
+Print #Filenumber, txt4
+Print #Filenumber, txt5
+Print #Filenumber, txt6
+Print #Filenumber, txt7
+Print #Filenumber, txt8
+Print #Filenumber, txt9
+Print #Filenumber, txt10
+Print #Filenumber, lblResult
+Close #Filenumber
+
+End Sub
+
+Private Sub Form_Load()
+Start = 0
+Dim T1 As String, T2 As String, T3 As String, T4 As String, T5 As String, T6 As String, T7 As String, T8 As String, T9 As String, T10 As String, Result As String
+Dim Filename As String
+Dim Filenumber
+Filenumber = FreeFile
+Filename = "C:\Audtrain\Save\T1 (1-1-1).txt"
+Open Filename For Input As Filenumber
+Line Input #Filenumber, T1
+Line Input #Filenumber, T2
+Line Input #Filenumber, T3
+Line Input #Filenumber, T4
+Line Input #Filenumber, T5
+Line Input #Filenumber, T6
+Line Input #Filenumber, T7
+Line Input #Filenumber, T8
+Line Input #Filenumber, T9
+Line Input #Filenumber, T10
+Line Input #Filenumber, Result
+Close #Filenumber
+txt1 = T1
+txt2 = T2
+txt3 = T3
+txt4 = T4
+txt5 = T5
+txt6 = T6
+txt7 = T7
+txt8 = T8
+txt9 = T9
+txt10 = T10
+lblResult = Result
+If T1 <> "" Then
+cmdPlay1.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay1.Enabled = True
+End If
+If T2 <> "" Then
+cmdPlay2.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay2.Enabled = True
+End If
+If T3 <> "" Then
+cmdPlay3.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay3.Enabled = True
+End If
+If T4 <> "" Then
+cmdPlay4.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay4.Enabled = True
+End If
+If T5 <> "" Then
+cmdPlay5.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay5.Enabled = True
+End If
+If T6 <> "" Then
+cmdPlay6.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay6.Enabled = True
+End If
+If T7 <> "" Then
+cmdPlay7.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay7.Enabled = True
+End If
+If T8 <> "" Then
+cmdPlay8.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay8.Enabled = True
+End If
+If T9 <> "" Then
+cmdPlay9.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay9.Enabled = True
+End If
+If T10 <> "" Then
+cmdPlay10.Enabled = False
+cmdResult.Caption = "ÔÑæÚ ãÌÏÏ"
+Else
+cmdPlay10.Enabled = True
+End If
+End Sub
+
+Private Sub Timer1_Timer()
+'lblRand.Caption = Left(Right(Trim(Time), 4), 1)
+
+lblRand.Caption = Left(Right(Timer, 2), 1)
+
+Rand = Val(lblRand.Caption)
+If Rand <= 4 Then
+Rand = Rand + 1
+Else
+Rand = Rand - 4
+End If
+'Label2.Caption = Str(Rand)
+If cmdPlay1.Enabled = False And cmdPlay2.Enabled = False And cmdPlay3.Enabled = False And cmdPlay4.Enabled = False And cmdPlay5.Enabled = False And cmdPlay6.Enabled = False And cmdPlay7.Enabled = False And cmdPlay8.Enabled = False And cmdPlay9.Enabled = False And cmdPlay10.Enabled = False Then
+cmdNext.Enabled = True
+Else
+cmdNext.Enabled = False
+End If
+End Sub
+
+
+Private Sub txt1_Change()
+Dim n As Integer, s As String
+txt1.Text = Trim(txt1.Text)
+For n = 1 To Len(txt1.Text)
+s = Mid(txt1.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt1.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt10_Change()
+Dim n As Integer, s As String
+txt10.Text = Trim(txt10.Text)
+For n = 1 To Len(txt10.Text)
+s = Mid(txt10.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt10.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt2_Change()
+Dim n As Integer, s As String
+txt2.Text = Trim(txt2.Text)
+For n = 1 To Len(txt2.Text)
+s = Mid(txt2.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+Exit For
+End If
+Next n
+
+End Sub
+
+Private Sub txt3_Change()
+Dim n As Integer, s As String
+txt3.Text = Trim(txt3.Text)
+For n = 1 To Len(txt3.Text)
+s = Mid(txt3.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt3.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt4_Change()
+Dim n As Integer, s As String
+txt4.Text = Trim(txt4.Text)
+For n = 1 To Len(txt4.Text)
+s = Mid(txt4.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt4.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt5_Change()
+Dim n As Integer, s As String
+txt5.Text = Trim(txt5.Text)
+For n = 1 To Len(txt5.Text)
+s = Mid(txt5.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt5.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt6_Change()
+Dim n As Integer, s As String
+txt6.Text = Trim(txt6.Text)
+For n = 1 To Len(txt6.Text)
+s = Mid(txt6.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt6.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt7_Change()
+Dim n As Integer, s As String
+txt7.Text = Trim(txt7.Text)
+For n = 1 To Len(txt7.Text)
+s = Mid(txt7.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt7.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt8_Change()
+Dim n As Integer, s As String
+txt8.Text = Trim(txt8.Text)
+For n = 1 To Len(txt8.Text)
+s = Mid(txt8.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt8.Text = ""
+Exit For
+End If
+Next n
+End Sub
+
+Private Sub txt9_Change()
+Dim n As Integer, s As String
+txt9.Text = Trim(txt9.Text)
+For n = 1 To Len(txt9.Text)
+s = Mid(txt9.Text, n, 1)
+If Val(s) = 0 And s <> "0" Then
+MsgBox ("Please insert a number")
+txt9.Text = ""
+Exit For
+End If
+Next n
+End Sub
